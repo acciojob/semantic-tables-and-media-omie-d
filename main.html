@@ -1,12 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Semantic Table and Media List</title>
-</head>
-<body>
+// Semantic Tables and Media
 
-  <!-- Semantic Table -->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<!-- the entire body must be written by student -->
+	<!-- Semantic Table -->
   <table border="1">
     <thead>
       <tr>
@@ -30,27 +34,39 @@
     </tbody>
   </table>
 
-  <!-- Required Heading -->
+  <!-- Heading between table and list -->
   <h2>List of medias</h2>
 
-  <!-- Ordered Media List -->
+  <!-- Ordered List of Media Items -->
   <ol>
-    <li>
-      <img src="https://picsum.photos/id/123/200/300" alt="Random Sample Image from Picsum">
-    </li>
-    <li>
-      <video width="320" height="240" controls>
-        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </li>
-    <li>
-      <audio controls>
-        <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
-        Your browser does not support the audio element.
-      </audio>
-    </li>
-  </ol>
+  <!-- First item: Image -->
+  <li>
+    <img src="https://picsum.photos/id/123/200/300" alt="Random Image from Picsum">
+  </li>
+
+  <!-- Second item: Video with <source> -->
+  <li>
+    <video width="320" height="240" controls>
+      <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </li>
+
+  <!-- Third item: Audio with BOTH src on <audio> and <source> -->
+  <li>
+    <audio 
+      src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" 
+      controls>
+      <source 
+        src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" 
+        type="audio/ogg">
+      Your browser does not support the audio element.
+    </audio>
+  </li>
+</ol>
+    <script type="text/javascript" src="./script.js">
+</script>
 
 </body>
+
 </html>
